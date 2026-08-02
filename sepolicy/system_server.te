@@ -62,4 +62,3 @@ typeattribute power_hal_data_files core_data_file_type;
 
 typeattribute gps_data_file core_data_file_type;
 
-typeattribute camera_device sysfs_type;

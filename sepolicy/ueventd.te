@@ -8,4 +8,3 @@ allow ueventd camera_device:file { relabelto getattr open write };
 
 allow ueventd emmcblk_device:blk_file { relabelfrom relabelto create setattr unlink };
 
-allow ueventd camera_device:lnk_file relabelto;

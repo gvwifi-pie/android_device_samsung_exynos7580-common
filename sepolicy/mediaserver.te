@@ -18,7 +18,6 @@ allow mediaserver system_server:unix_stream_socket { read write };
 
 # CamFW permission
 allow mediaserver camera_device:file { read open getattr };
-allow mediaserver camera_device:dir search;
 
 #
 # All our codecs run in the mediaserver process for now because of

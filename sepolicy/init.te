@@ -31,7 +31,6 @@ allow init property_socket:sock_file write;
 
 allow init system_data_file:fifo_file write;
 
-allow init camera_device:file { relabelto setattr };
 allow init debugfs:file write;
 allow init efs_file:dir mounton;
 

@@ -50,3 +50,16 @@ allow system_server power_hal_data_files:file rw_file_perms;
 # NEVERALLOW : allow system_server dalvikcache_data_file:file execute;
 allow system_server unlabeled:file unlink;
 allow system_server emmcblk_device:blk_file { write ioctl getattr read open };
+# Add missing type attributes for sepolicy_tests
+typeattribute biometrics_data_file data_file_type;
+typeattribute biometrics_data_file core_data_file_type;
+
+typeattribute mobicore_data_file data_file_type;
+typeattribute mobicore_data_file core_data_file_type;
+
+typeattribute power_hal_data_files data_file_type;
+typeattribute power_hal_data_files core_data_file_type;
+
+typeattribute gps_data_file core_data_file_type;
+
+typeattribute camera_device sysfs_type;

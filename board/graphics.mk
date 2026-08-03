@@ -23,3 +23,8 @@ BOARD_USES_GSC_VIDEO := true
 
 # ION
 TARGET_USES_ION := true
+
+# Tell explicitly the blobs are from stone age
+TARGET_USES_HWC2 := false
+TARGET_USES_HWC1_COMPAT := true
+TARGET_USES_GRALLOC1 := false
